@@ -2,7 +2,7 @@ import { createApp, h } from "vue"
 import { InertiaProgress } from "@inertiajs/progress"
 import { createInertiaApp } from "@inertiajs/inertia-vue3"
 import { notifications } from "./Plugins/notifications"
-import Toast from "vue-toastification"
+import Toast, { PluginOptions } from "vue-toastification"
 import { modal } from "momentum-modal"
 
 import "vue-toastification/dist/index.css"
@@ -26,7 +26,9 @@ createInertiaApp({
   setup({ el, app, props, plugin }) {
     createApp({ render: () => h(app, props) })
       .use(modal, (name: string) => resolvePageComponent(name, import.meta.glob("./Pages/**/*.vue")))
-      .use(Toast)
+      .use(Toast, {
+        timeout: 2000,
+      })
       .use(notifications)
       .use(plugin)
       .mount(el)
