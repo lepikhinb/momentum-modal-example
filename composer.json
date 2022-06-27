@@ -11,6 +11,7 @@
     "php": "^7.4|^8.0",
     "ext-exif": "*",
     "ext-gd": "*",
+    "based/momentum-modal": "^0.1.2",
     "fruitcake/laravel-cors": "^2.0",
     "guzzlehttp/guzzle": "^7.0.1",
     "inertiajs/inertia-laravel": "^0.5.3",
@@ -18,8 +19,7 @@
     "laravel/framework": "^8.65",
     "laravel/sanctum": "^2.11",
     "laravel/tinker": "^2.5",
-    "league/glide-laravel": "^1.0",
-    "momentum/modal": "*"
+    "league/glide-laravel": "^1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
@@ -30,12 +30,6 @@
     "nunomaduro/collision": "^5.10",
     "phpunit/phpunit": "^9.5.10"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/lepikhinb/momentum-modal.git"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "App\\": "app/",
