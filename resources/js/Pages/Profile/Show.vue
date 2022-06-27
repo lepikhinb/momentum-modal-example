@@ -41,11 +41,6 @@ const update = () =>
           type="password"
           autocomplete="new-password"
           label="Password" />
-        <select-input v-model="form.owner" :error="form.errors.owner" label="Owner">
-          <option :value="true">Yes</option>
-          <option :value="false">No</option>
-        </select-input>
-        <file-input v-model="form.photo" :error="form.errors.photo" type="file" accept="image/*" label="Photo" />
       </div>
       <div class="mt-6 flex justify-between">
         <loading-button :loading="form.processing" class="btn-indigo ml-auto" type="submit">Update</loading-button>

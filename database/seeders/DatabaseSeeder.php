@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $account = Account::create(['name' => 'Acme Corporation']);
+        $account = Account::create(['name' => 'Momentum']);
 
         User::factory()->create([
             'account_id' => $account->id,
@@ -25,7 +25,6 @@ class DatabaseSeeder extends Seeder
             'last_name' => 'Doe',
             'email' => 'johndoe@example.com',
             'password' => 'secret',
-            'owner' => true,
         ]);
 
         User::factory(5)->create(['account_id' => $account->id]);
