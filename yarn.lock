@@ -1337,10 +1337,10 @@
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
   "version" "1.2.6"
 
-"momentum-modal@^0.0.2":
-  "integrity" "sha512-deMqvcKKI5ZTE3V0hm7d9J3wd+O7RMGJyrIK+vm00HolRESJojBPUnc7k9yC2ZxQ72N+MT+eGzZybA8J6Cj+gQ=="
-  "resolved" "https://registry.npmjs.org/momentum-modal/-/momentum-modal-0.0.2.tgz"
-  "version" "0.0.2"
+"momentum-modal@^0.0.6":
+  "integrity" "sha512-RqtNJVvePEaEYqdXNF1/tK8VnA6gi8HO9K+q4qJKn307ZCbF5xl8NXZNSurS73nzKYdbGVEzRoN32sqZaDZtqA=="
+  "resolved" "https://registry.npmjs.org/momentum-modal/-/momentum-modal-0.0.6.tgz"
+  "version" "0.0.6"
 
 "ms@2.1.2":
   "integrity" "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="

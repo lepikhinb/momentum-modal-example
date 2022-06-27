@@ -6,6 +6,7 @@
 /public/storage
 /storage/*.key
 /public/build
+/public/ssr
 /vendor
 .DS_Store
 .env

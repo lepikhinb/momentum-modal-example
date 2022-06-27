@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "build:ssr": "vite build --ssr --config vite.config.ssr.ts",
+    "serve": "node public/ssr/ssr.js"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.4",
@@ -17,7 +19,7 @@
     "eslint": "^8.4.1",
     "eslint-plugin-vue": "^8.2.0",
     "lodash": "^4.17.21",
-    "momentum-modal": "^0.0.2",
+    "momentum-modal": "^0.0.6",
     "postcss": "^8.4.4",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",

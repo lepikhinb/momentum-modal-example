@@ -2,8 +2,8 @@ import { createApp, h } from "vue"
 import { InertiaProgress } from "@inertiajs/progress"
 import { createInertiaApp } from "@inertiajs/inertia-vue3"
 import { notifications } from "./Plugins/notifications"
-import Toast, { PluginOptions } from "vue-toastification"
-import { modal } from "momentum-modal"
+import Toast from "vue-toastification"
+import { modal, ModalPluginOptions } from "momentum-modal"
 
 import "vue-toastification/dist/index.css"
 import "../css/app.css"
@@ -25,10 +25,10 @@ createInertiaApp({
   title: (title) => (title ? `${title} - Ping CRM` : "Ping CRM"),
   setup({ el, app, props, plugin }) {
     createApp({ render: () => h(app, props) })
-      .use(modal, (name: string) => resolvePageComponent(name, import.meta.glob("./Pages/**/*.vue")))
-      .use(Toast, {
-        timeout: 2000,
-      })
+      .use(modal, {
+        resolve: (name) => resolvePageComponent(name, import.meta.glob("./Pages/**/*.vue")),
+      } as ModalPluginOptions)
+      .use(Toast, { timeout: 2000 })
       .use(notifications)
       .use(plugin)
       .mount(el)
