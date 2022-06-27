@@ -13,7 +13,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.startsWith" defer></script>
 
     <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://cdn.usefathom.com/script.js" data-spa="auto" data-site="FCYYRSEU" defer></script>
+    <script src="https://honored-luminous.advanced-inertia.com/script.js" data-site="FCYYRSEU" defer></script>
     <!-- / Fathom -->
 
     @inertiaHead
