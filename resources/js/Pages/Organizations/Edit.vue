@@ -20,7 +20,9 @@ const form = useForm({
 })
 
 const update = () => {
-  form.put(`/organizations/${props.organization.id}`)
+  form.put(`/organizations/${props.organization.id}`, {
+    preserveScroll: true,
+  })
 }
 
 const destroy = () => {
