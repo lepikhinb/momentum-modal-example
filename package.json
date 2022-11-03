@@ -19,7 +19,7 @@
     "eslint": "^8.4.1",
     "eslint-plugin-vue": "^8.2.0",
     "lodash": "^4.17.21",
-    "momentum-modal": "^0.1.8",
+    "momentum-modal": "^0.1.15",
     "postcss": "^8.4.4",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",
