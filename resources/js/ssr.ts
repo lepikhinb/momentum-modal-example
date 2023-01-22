@@ -3,7 +3,6 @@ import { renderToString } from "@vue/server-renderer"
 import { createInertiaApp } from "@inertiajs/vue3"
 /** @ts-expect-error */
 import createServer from "@inertiajs/vue3/server"
-import { modal } from "momentum-modal"
 
 function resolvePageComponent(name: string, pages: Record<string, any>) {
   for (const path in pages) {
