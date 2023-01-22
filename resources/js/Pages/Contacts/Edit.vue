@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import { Head, useForm } from "@inertiajs/inertia-vue3"
+import { Head, useForm, router } from "@inertiajs/vue3"
 import TextInput from "@/Shared/TextInput.vue"
 import SelectInput from "@/Shared/SelectInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"
 import TrashedMessage from "@/Shared/TrashedMessage.vue"
-import { Inertia } from "@inertiajs/inertia"
 import Modal from "@/Shared/Modal.vue"
 
 const props = defineProps<{ contact: Record<string, any>; organizations: any[] }>()
@@ -29,7 +28,7 @@ const update = () => {
 
 const destroy = () => {
   if (confirm("Are you sure you want to delete this contact?")) {
-    Inertia.delete(`/contacts/${props.contact.id}`, {
+    router.delete(`/contacts/${props.contact.id}`, {
       preserveScroll: true,
     })
   }
@@ -37,7 +36,7 @@ const destroy = () => {
 
 const restore = () => {
   if (confirm("Are you sure you want to restore this contact?")) {
-    Inertia.put(
+    router.put(
       `/contacts/${props.contact.id}/restore`,
       {},
       {

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Head, useForm } from "@inertiajs/inertia-vue3"
+import { Head, useForm } from "@inertiajs/vue3"
 import TextInput from "@/Shared/TextInput.vue"
 import SelectInput from "@/Shared/SelectInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"
@@ -43,9 +43,9 @@ const store = () => {
         <text-input v-model="form.postal_code" :error="form.errors.postal_code" label="Postal code" />
       </div>
       <div class="mt-6 flex justify-between">
-        <loading-button :loading="form.processing" class="btn-indigo ml-auto" type="submit"
-          >Create Organization</loading-button
-        >
+        <loading-button :loading="form.processing" class="btn-indigo ml-auto" type="submit">
+          Create Organization
+        </loading-button>
       </div>
     </form>
   </Slideover>

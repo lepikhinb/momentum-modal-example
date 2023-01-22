@@ -1,8 +1,6 @@
 <script lang="ts" setup>
-import { Head, Link, useForm } from "@inertiajs/inertia-vue3"
+import { Head, Link, useForm } from "@inertiajs/vue3"
 import TextInput from "@/Shared/TextInput.vue"
-import FileInput from "@/Shared/FileInput.vue"
-import SelectInput from "@/Shared/SelectInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"
 import Modal from "@/Shared/Modal.vue"
 

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Head } from "@inertiajs/inertia-vue3"
+import { Head } from "@inertiajs/vue3"
 import Layout from "@/Shared/Layout.vue"
 </script>
 

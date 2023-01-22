@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { Link, usePage } from "@inertiajs/inertia-vue3"
+import { Link, usePage } from "@inertiajs/vue3"
 import Icon from "@/Shared/Icon.vue"
 import Logo from "@/Shared/Logo.vue"
 import Dropdown from "@/Shared/Dropdown.vue"
 import MainMenu from "@/Shared/MainMenu.vue"
 import { Modal } from "momentum-modal"
 
-const auth = usePage<{ auth: any }>().props.value.auth
+const auth = usePage().props?.auth
 </script>
 
 <template>
@@ -50,16 +50,15 @@ const auth = usePage<{ auth: any }>().props.value.auth
               </template>
               <template #dropdown>
                 <div class="mt-2 rounded bg-white py-2 text-sm shadow-xl">
-                  <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white" :href="`/profile`" preserve-scroll
-                    >My Profile</Link
-                  >
+                  <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white" :href="`/profile`" preserve-scroll>
+                    My Profile
+                  </Link>
                   <Link
                     class="block w-full px-6 py-2 text-left hover:bg-indigo-500 hover:text-white"
                     href="/logout"
-                    method="delete"
-                    as="button"
-                    >Logout</Link
-                  >
+                    as="button">
+                    Logout
+                  </Link>
                 </div>
               </template>
             </dropdown>

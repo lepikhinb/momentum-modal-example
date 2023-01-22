@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Head, useForm } from "@inertiajs/inertia-vue3"
+import { Head, useForm } from "@inertiajs/vue3"
 import TextInput from "@/Shared/TextInput.vue"
 import SelectInput from "@/Shared/SelectInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"

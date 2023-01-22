@@ -48,10 +48,6 @@ class ProfileController extends Controller
 
         $user->update(Request::only('first_name', 'last_name', 'email'));
 
-        if (Request::get('password')) {
-            $user->update(['password' => Request::get('password')]);
-        }
-
         return Redirect::back()->with('success', 'User updated.');
     }
 }

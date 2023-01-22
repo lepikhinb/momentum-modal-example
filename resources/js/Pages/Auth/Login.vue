@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Head, useForm } from "@inertiajs/inertia-vue3"
+import { Head, useForm } from "@inertiajs/vue3"
 import Logo from "@/Shared/Logo.vue"
 import TextInput from "@/Shared/TextInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"

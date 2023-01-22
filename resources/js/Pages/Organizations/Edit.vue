@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import { Head, useForm } from "@inertiajs/inertia-vue3"
+import { Head, useForm, router } from "@inertiajs/vue3"
 import TextInput from "@/Shared/TextInput.vue"
 import SelectInput from "@/Shared/SelectInput.vue"
 import LoadingButton from "@/Shared/LoadingButton.vue"
 import TrashedMessage from "@/Shared/TrashedMessage.vue"
-import { Inertia } from "@inertiajs/inertia"
 import Slideover from "@/Shared/Slideover.vue"
 
 const props = defineProps<{ organization: Record<string, any> }>()
@@ -27,13 +26,13 @@ const update = () => {
 
 const destroy = () => {
   if (confirm("Are you sure you want to delete this organization?")) {
-    Inertia.delete(`/organizations/${props.organization.id}`)
+    router.delete(`/organizations/${props.organization.id}`)
   }
 }
 
 const restore = () => {
   if (confirm("Are you sure you want to restore this organization?")) {
-    Inertia.put(`/organizations/${props.organization.id}/restore`)
+    router.put(`/organizations/${props.organization.id}/restore`)
   }
 }
 </script>
