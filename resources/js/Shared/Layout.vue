@@ -1,16 +1,19 @@
 <script lang="ts" setup>
 import { Link, usePage } from "@inertiajs/vue3"
+import { Modal } from "momentum-modal"
 import Icon from "@/Shared/Icon.vue"
 import Logo from "@/Shared/Logo.vue"
 import Dropdown from "@/Shared/Dropdown.vue"
 import MainMenu from "@/Shared/MainMenu.vue"
-import { Modal } from "momentum-modal"
+import Banner from "@/Shared/Banner.vue"
 
 const auth = usePage().props?.auth
 </script>
 
 <template>
   <div>
+    <Banner />
+
     <div id="dropdown" />
     <div class="md:flex md:flex-col">
       <div class="md:flex md:h-screen md:flex-col">
